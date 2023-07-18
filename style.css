@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(13, 25, 43);
+  display: flex;
+  box-sizing: border-box;
+
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.box {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(20, 37, 61);
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 10px;
+}
+.other {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 18px;
+}
+.img-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.icon-view {
+  position: absolute;
+  top: 50%;
+  visibility: hidden;
+}
+.img {
+  width: 88%;
+  height: 90%;
+  border-radius: 6px;
+}
+.img-box:hover .icon-view {
+  visibility: visible;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 1%;
+  bottom: 1%;
+  left: 6%;
+  right: 0;
+  width: 88%;
+  height: 99%;
+  border-radius: 6px;
+  display: none;
+  background-color: rgb(0, 255, 247, 0.3);
+}
+
+.img-box:hover .img-overlay {
+  display: block;
+}
+.eq {
+  font-size: 16px;
+  font-family: "outfit";
+  color: #fff;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+.eq:hover {
+  color: rgb(0, 255, 247);
+  cursor: pointer;
+}
+.text {
+  font-family: "outfit";
+  font-size: 15px;
+  color: rgb(139, 172, 218);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.val {
+  font-size: 14px;
+  font-family: "outfit";
+  color: rgb(0, 255, 247);
+}
+.val-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.time {
+  font-size: 13px;
+  font-family: "outfit";
+  color: rgb(139, 172, 218);
+  font-weight: 300;
+  margin-right: 15px;
+}
+.time-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.bet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.end {
+  border-top: 1px solid rgb(47, 65, 91);
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+.create {
+  font-size: 13px;
+  font-family: "outfit";
+  color: rgb(139, 172, 218);
+  margin-top: 14px;
+  font-weight: 300;
+}
+.jul {
+  color: #fff;
+  transition: all 0.3s;
+}
+.jul:hover {
+  color: rgb(0, 255, 247);
+  cursor: pointer;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
